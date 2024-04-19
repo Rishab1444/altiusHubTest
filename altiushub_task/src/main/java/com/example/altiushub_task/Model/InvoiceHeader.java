@@ -26,8 +26,6 @@ public class InvoiceHeader {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
     private String date;
-    @Column(unique = true, nullable = false)
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer invoiceNumber;
     private String customerName;
     private String billingAddress;
